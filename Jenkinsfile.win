@@ -26,10 +26,6 @@ pipeline {
                 bat "${env.SAG_HOME}/common/AssetBuildEnvironment/bin/build.bat -Dbuild.source.dir=C:/ProgramData/Jenkins/.jenkins/workspace/${env.JOB_NAME}/assets/IS/Packages"
             }
         }
-        stage('CreateProject'){
-            steps {
-                bat "${env.SAG_HOME}/IntegrationServer/instances/default/packages/WmDeployer/bin/projectautomator.bat F:/DevOp/CI/ProjectAutomator.xml"
-            }
-        }
+       
     }
 }
